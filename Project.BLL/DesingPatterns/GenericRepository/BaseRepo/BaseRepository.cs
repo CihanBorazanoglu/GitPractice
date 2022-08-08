@@ -119,7 +119,7 @@ namespace Project.BLL.DesingPatterns.GenericRepository.BaseRepo
         {
             foreach (T item in list)
             {
-                UpdatedRange(item);
+                Updated(item);
             }
         }
 

@@ -54,7 +54,7 @@
     <Compile Include="DesingPatterns\GenericRepository\BaseRepo\BaseRepository.cs" />
     <Compile Include="DesingPatterns\GenericRepository\ConcRepo\CategoryRepository.cs" />
     <Compile Include="DesingPatterns\GenericRepository\ConcRepo\EmployeeRepository.cs" />
-    <Compile Include="DesingPatterns\GenericRepository\ConcRepo\OrderDetailRepository.cs" />
+    <Compile Include="DesingPatterns\GenericRepository\ConcRepo\ProductOrderRepository.cs" />
     <Compile Include="DesingPatterns\GenericRepository\ConcRepo\OrderRepository.cs" />
     <Compile Include="DesingPatterns\GenericRepository\ConcRepo\ProductRepository.cs" />
     <Compile Include="DesingPatterns\GenericRepository\InRepo\IRepository.cs" />

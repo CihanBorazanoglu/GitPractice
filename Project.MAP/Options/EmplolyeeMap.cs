@@ -11,8 +11,8 @@ namespace Project.MAP.Options
     {
         public EmplolyeeMap()
         {
-            Property(x => x.FirstName).HasColumnType("nvarcahr").HasMaxLength(50);
-            Property(x => x.LastName).HasColumnType("nvarcahr").HasMaxLength(50);
+            Property(x => x.FirstName).HasColumnType("nvarchar").HasMaxLength(50);
+            Property(x => x.LastName).HasColumnType("nvarchar").HasMaxLength(50);
         }
     }
 }

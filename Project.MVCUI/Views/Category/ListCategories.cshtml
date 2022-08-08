@@ -1,0 +1,34 @@
+﻿@model CategoryVM
+
+@{
+    ViewBag.Title = "ListCategories";
+}
+
+<div class="jumbotron">
+    Kategori Listesi
+</div>
+<div class="panel panel-primary">
+    <div class="panel panel-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Kategori ID</th>
+                    <th>Kategori Ismi</th>
+                    <th>Aciklamasi</th>
+                    <th colspan="2" style="text-align:center;padding-left:20px;">Islemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Category item in Model.Categories)
+                {
+                    <tr>
+                        <td>@item.ID</td>
+                        <td>@item.CategoryName</td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

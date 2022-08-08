@@ -51,11 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesingPatterns\GenericRepository\BaseRepo\BaseRepository.cs" />
+    <Compile Include="DesingPatterns\GenericRepository\ConcRepo\CategoryRepository.cs" />
+    <Compile Include="DesingPatterns\GenericRepository\ConcRepo\EmployeeRepository.cs" />
+    <Compile Include="DesingPatterns\GenericRepository\ConcRepo\OrderDetailRepository.cs" />
+    <Compile Include="DesingPatterns\GenericRepository\ConcRepo\OrderRepository.cs" />
+    <Compile Include="DesingPatterns\GenericRepository\ConcRepo\ProductRepository.cs" />
+    <Compile Include="DesingPatterns\GenericRepository\InRepo\IRepository.cs" />
+    <Compile Include="DesingPatterns\SingletonPattern\DBTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DesingPatterns\GenericRepository\" />
-    <Folder Include="DesingPatterns\SingletonPattern\" />
+    <ProjectReference Include="..\Project.DAL\Project.DAL.csproj">
+      <Project>{80937df7-c5b9-4fcb-916d-8972a26b183c}</Project>
+      <Name>Project.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.ENTITIES\Project.ENTITIES.csproj">
+      <Project>{7d4f7b0d-4486-4bc5-9174-0a344f331183}</Project>
+      <Name>Project.ENTITIES</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
